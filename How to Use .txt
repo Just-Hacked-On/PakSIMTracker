@@ -1,0 +1,44 @@
+How to Use  ?
+
+Follow these steps to run Tracker.exe:
+
+Turn Off Windows Defender
+First, turn off Windows Defender because it might detect and delete this tool.
+
+Open Start menu, search for "Windows Security."
+
+Go to "Virus & Threat Protection" > "Manage Settings" and turn off Real-time protection.
+
+Open CMD or PowerShell as Admin
+You need to run Command Prompt (CMD) or PowerShell as Administrator.
+
+Search for "cmd" or "powershell" in Start menu.
+
+Right-click and select "Run as Administrator."
+
+Go to the Tool’s Folder
+In CMD or PowerShell, go to the folder where Tracker.exe is saved.
+
+Example: If the file is in C:\Users\YourName\Downloads\PakSIMTracker, type:
+
+cd C:\Users\YourName\Downloads\PakSIMTracker
+
+Run the Tracker
+After going to the folder, use this command:
+
+Tracker.exe -num <SIM_NUMBER>
+
+Replace <SIM_NUMBER> with the SIM number you want to track.
+
+Example: Tracker.exe -num 03001234567
+
+In a few seconds, you’ll see the owner’s name, ID card, address, and other details on the screen.
+
+Get Full List with -l Flag
+To see a list of all SIMs linked to the same ID card, use the -l flag. You can also save the list to a file like demo.txt.
+
+Command:
+
+Tracker.exe -num <SIM_NUMBER> -l demo.txt
+
+This will save the data of all linked SIMs in demo.txt, listed in order.
