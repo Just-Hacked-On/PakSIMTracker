@@ -1,4 +1,4 @@
-How to Use  ?
+How to Use
 
 Follow these steps to run Tracker.exe:
 
@@ -23,8 +23,8 @@ Example: If the file is in C:\Users\YourName\Downloads\PakSIMTracker, type:
 
 cd C:\Users\YourName\Downloads\PakSIMTracker
 
-Run the Tracker
-After going to the folder, use this command:
+Run the Tracker for One Number
+To track a single SIM number, use this command:
 
 Tracker.exe -num <SIM_NUMBER>
 
@@ -34,11 +34,14 @@ Example: Tracker.exe -num 03001234567
 
 In a few seconds, you’ll see the owner’s name, ID card, address, and other details on the screen.
 
-Get Full List with -l Flag
-To see a list of all SIMs linked to the same ID card, use the -l flag. You can also save the list to a file like demo.txt.
+Track Multiple Numbers with -l Flag
+To track multiple SIM numbers at once, create a demo.txt file with a list of SIM numbers (one number per line). Then use the -l flag:
 
-Command:
+Tracker.exe -l demo.txt
 
-Tracker.exe -num <SIM_NUMBER> -l demo.txt
+Example: If demo.txt has numbers like:
+03001234567
+03123456789
+03331234567
 
-This will save the data of all linked SIMs in demo.txt, listed in order.
+The tool will search all numbers in the list and show the data (owner’s name, ID card, address, and linked SIMs) for each number in order on the screen.
